@@ -1,0 +1,34 @@
+.GameOfLife-Grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  border-top: 1px solid #666;
+  border-left: 1px solid #666;
+  box-sizing: content-box;
+  margin: auto;
+  margin-bottom: 1.5rem;
+}
+
+.GameOfLife-Row{
+  line-height: 12px;
+  
+}
+
+.GameOfLife-Cell {
+  flex: 0 0 12px;
+  width: 12px;
+  border-right: 1px solid #666;
+  border-bottom: 1px solid #666;
+  height: 12px;
+  display: inline-block;
+}
+
+.GameOfLife-Cell:hover {
+  background-color: #EAB543;
+}
+
+.GameOfLife-Cell-Alive {
+  background-color: #55E6C1;
+
+}

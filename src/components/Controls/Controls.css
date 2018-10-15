@@ -1,0 +1,46 @@
+.GameOfLife-Controls {
+  text-align: center;
+  padding-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.GameOfLife-Controls > * {
+  margin-left: 0.5rem;
+}
+
+.Speed-Slider {
+  display: inline-block;
+  width: 120px;
+  vertical-align: middle;
+}
+
+.GameOfLife-Controls .rangeslider-horizontal {
+  height: 10px;
+  border-radius: 0;
+  background-color: #fff;
+  box-shadow: none;
+}
+.rangeslider__labels {
+  color: #fff;
+}
+
+.GameOfLife-Controls .rangeslider-horizontal .rangeslider__fill {
+  background-color: #F97F51;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.GameOfLife-Controls .rangeslider-horizontal .rangeslider__handle {
+ width: 12px;
+ border-radius: 0;
+ box-shadow: none;
+}
+
+.GameOfLife-Controls .rangeslider-horizontal .rangeslider__handle:after {
+  width: 0;
+  height: 0;
+}
+
+.dropdown {
+  display: inline-block;
+}
