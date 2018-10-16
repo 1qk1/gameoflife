@@ -2,7 +2,7 @@
   "name": "gameoflife",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/1qk1/gameoflife",
+  "homepage": "https://1qk1.github.io/gameoflife/",
   "dependencies": {
     "bootstrap": "^4.1.3",
     "react": "^16.5.2",
