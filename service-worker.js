@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/1qk1/gameoflife/precache-manifest.412219aa51f4abe32b27d8a4b6f0f0ca.js"
+  "/gameoflife/precache-manifest.7ddf4969a28f5fefc6adbc7e09a8913e.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/1qk1/gameoflife/index.html", {
+workbox.routing.registerNavigationRoute("/gameoflife/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
