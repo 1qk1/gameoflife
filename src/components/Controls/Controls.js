@@ -7,14 +7,14 @@ import 'react-rangeslider/lib/index.css'
 import ShapesDropdown from '../Buttons/ShapesDropdown';
 
 
-const controls = ({startGame, stopGame, speed, gridSizeHandler, speedChangeHandler, randomGrid, pauseGame, placeShape}) => {
+const controls = ({startGame, clearGrid, speed, gridSizeHandler, speedChangeHandler, randomGrid, pauseGame, placeShape}) => {
   return (
     <div className='GameOfLife-Controls'>
       <Button size="sm" onClick={startGame} color="success">Start Game</Button>
-      <Button size="sm" onClick={pauseGame} color="warning">Pause Game</Button>
-      <Button size="sm" onClick={stopGame} color="danger">Clear Grid</Button>
+      <Button size="sm" onClick={pauseGame} color="warning">Stop Game</Button>
+      <Button size="sm" onClick={clearGrid} color="danger">Clear Grid</Button>
       <Button size="sm" onClick={randomGrid} color="info">Random Grid</Button>
-      <GridDropDown clicked={placeShape} />
+      <GridDropDown clicked={gridSizeHandler} />
       <ShapesDropdown clicked={placeShape} />
       <div className="Speed-Slider">
         <Slider

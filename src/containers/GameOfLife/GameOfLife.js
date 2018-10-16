@@ -113,14 +113,14 @@ class GameOfLife extends PureComponent {
     clearInterval(this.timer);
   }
 
-  stopGame = () => {
+  clearGrid = () => {
     clearInterval(this.timer);
     this.initGrid();
     this.setState({genNo: 0});
   }
 
   gridSizeHandler = size => {
-    this.stopGame();
+    this.clearGrid();
     this.setState({gridSize: size}, () => {
       this.initGrid();
     })
@@ -179,7 +179,7 @@ class GameOfLife extends PureComponent {
           speedChangeHandler={this.speedChangeHandler}
           randomGrid={this.initRandomGrid}
           startGame={this.startGame}
-          stopGame={this.stopGame}
+          clearGrid={this.clearGrid}
           pauseGame={this.pauseGame}
           incSpeed={() => this.changeSpeed('inc')}
           decSpeed={() => this.changeSpeed('dec')}
